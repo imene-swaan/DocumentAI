@@ -17,7 +17,7 @@ class Entity(BaseModel):
         if not re.search(pattern, v):
             return ''
         return v
-    @validator('fax')
+    @validator('fax', 'num')
     def valid_num(cls, v):
         if len(v) != 12:
             return ''
