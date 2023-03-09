@@ -1,0 +1,22 @@
+[
+    {
+        "Declaration": [
+            {
+                "text": "As a specialist contractor, we declare that the contracted services were carried out in\ntime accordance with the requirements",
+                "start": 274,
+                "end": 399,
+                "probability": 0.5892498311199645,
+                "relations": {
+                    "declar": [
+                        {
+                            "text": "21/867/543926\nUST.ID. DE274234742",
+                            "start": 860,
+                            "end": 893,
+                            "probability": 0.6560233009297249
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+]

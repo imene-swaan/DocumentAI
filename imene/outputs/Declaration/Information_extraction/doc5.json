@@ -1,0 +1,56 @@
+[
+    {
+        "Declaration": [
+            {
+                "text": "19/634/655453\nDeclaration:\nThe Contractor here with expressly confirms that the work has been executed in accordance with\nthe contract and in full, as well as in accordance with the recognized the recogniz",
+                "start": 293,
+                "end": 498,
+                "probability": 0.3160733209433886,
+                "relations": {
+                    "declar": [
+                        {
+                            "text": "Order no. 20F00276 000",
+                            "start": 770,
+                            "end": 792,
+                            "probability": 0.47421003790225313
+                        },
+                        {
+                            "text": "recogniz",
+                            "probability": 0.4993427946031268
+                        }
+                    ],
+                    "confirms": [
+                        {
+                            "text": "Order no. 20F00276 000",
+                            "start": 770,
+                            "end": 792,
+                            "probability": 0.5869113872092342
+                        }
+                    ]
+                }
+            },
+            {
+                "text": "Order no. 20F00276 000",
+                "start": 770,
+                "end": 792,
+                "probability": 0.7387054891565725,
+                "relations": {
+                    "declar": [
+                        {
+                            "text": "Order no. 20F00276 000",
+                            "probability": 0.4366763075931601
+                        }
+                    ],
+                    "confirms": [
+                        {
+                            "text": "Declaration",
+                            "start": 307,
+                            "end": 318,
+                            "probability": 0.39535705344998817
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+[
+    {
+        "prompt": "declaration/confirmation:",
+        "result": [
+            {
+                "value": "Specialist contractor declaration",
+                "prob": 0.9,
+                "start": 77,
+                "end": 81
+            }
+        ]
+    }
+]
