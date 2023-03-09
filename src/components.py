@@ -7,8 +7,8 @@ import json
 
 if __name__ == '__main__':
 
-    processor = DonutProcessor.from_pretrained("naver-clova-ix/donut-base-finetuned-cord-v2")
-    model = VisionEncoderDecoderModel.from_pretrained("naver-clova-ix/donut-base-finetuned-cord-v2")
+    processor = DonutProcessor.from_pretrained("naver-clova-ix/donut-base-finetuned-docvqa")
+    model = VisionEncoderDecoderModel.from_pretrained("naver-clova-ix/donut-base-finetuned-docvqa")
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model.to(device)
