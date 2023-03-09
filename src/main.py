@@ -1,8 +1,13 @@
 
-from pdf2image import convert_from_path
+
+from extract import DocumentExtractor
+from utils import load_prompts
+import json
 
 if __name__ == '__main__':
-    for i in range(1, 6):
-        pages = convert_from_path(f'../data/Document {i}.pdf', 500)
-        for page in pages:
-            page.save(f'document_{i}.png', 'PNG')
+    doc = DocumentExtractor(
+        query=load_prompts(),
+    )
+
+    with open('output_entities.json', 'w') as f:
+        json.dump(doc.extract('../data/images/document_2.png'), f, indent=4)

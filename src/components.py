@@ -1,14 +1,34 @@
 
-from transformers import DonutProcessor, VisionEncoderDecoderModel
-import torch
+from typing import Dict
+from pydantic import BaseModel, validator
 import re
-from PIL.Image import open as open_image
-import json
 
+class Entity(BaseModel):
+    entity: str
+    address: str
+    taxID: str
+    num: str
+    email:str
+    fax: str
 
-if __name__ == '__main__':
-    from paddlenlp import Taskflow
-
-    # Chinese Word Segmentation
-    docprompt = Taskflow("document_intelligence")
-    print(docprompt({"doc": "document_3.png", "prompt": ['What are the contracted works', 'What is the project', 'What is the project ID']}))
+    @validator('email')
+    def valid_email(cls, v):
+        pattern = r'^[a-z0-9]+[\._]?[a-z0-9]+[@]\w+[.]\w{2,3}$'
+        if not re.search(pattern, v):
+            return ''
+        return v
+    @validator('fax')
+    def valid_num(cls, v):
+        if len(v) != 12:
+            return ''
+        for i in range(12):
+            if i in [3, 7]:
+                if v[i] != '-':
+                    return ''
+            elif not v[i].isalnum():
+                return ''
+        return v
+def process_result(result: Dict):
+    if result['prob'] < 0.7:
+        return ''
+    return result['value']
