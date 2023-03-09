@@ -10,4 +10,4 @@ if __name__ == '__main__':
     )
 
     with open('output_entities.json', 'w') as f:
-        json.dump(doc.extract('../data/images/document_2.png'), f, indent=4)
+        json.dump(doc.extract('../data/images/document_5.png'), f, indent=4)

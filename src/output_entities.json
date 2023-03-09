@@ -3,33 +3,34 @@
         "name": "Contracting Entity",
         "attributes": {
             "entity": "Construction Management GmbH.",
-            "address": "Lichtstrasse 81, Munich, Bayern",
-            "taxID": "DE28 901 637 28",
-            "num": "(0) 418-874-465-0",
-            "email": "info@newhorizons.com",
+            "address": "GartenstraBe 6, 80638 Munich.",
+            "taxID": "15/689/451243.",
+            "num": "19/634/655453",
+            "email": "sweiss@fcs.com",
             "fax": ""
         }
     },
     {
         "name": "Contractor Entity",
         "attributes": {
-            "entity": "New Horizons Ltd.",
-            "address": "BlaustraBe 16, 80587, Munich.",
-            "taxID": "DE28 901 637 28",
-            "num": "(0) 418-874-465-0",
-            "email": "info@newhorizons.com",
+            "entity": "Framing contracting specialists Ltd",
+            "address": "Dachauerstr. 17, 80637, Munchen, Bayern",
+            "taxID": "19/634/655453",
+            "num": "19/634/655453",
+            "email": "sweiss@fcs.com",
             "fax": ""
         }
     },
     {
-        "project_id": "DE28 901 637 28",
-        "order_id": "20230213-A674B",
-        "date": "26.06.2021"
+        "project": "CAU / New Philological building",
+        "project_id": "GM-31240071",
+        "order_id": "20F00276 000",
+        "date": "03.11.2018"
     },
     {
         "services": [
-            "Supply of materials, labor, and installation of metallic framed,insulated double-faced drywalls",
-            "Gypsum and drywall"
+            "",
+            "CAU / New Philological building"
         ]
     }
 ]
