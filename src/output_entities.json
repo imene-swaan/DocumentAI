@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Contracting Entity",
+        "attributes": {
+            "entity": "Construction Management GmbH.",
+            "address": "Lichtstrasse 81, Munich, Bayern",
+            "taxID": "DE28 901 637 28",
+            "num": "(0) 418-874-465-0",
+            "email": "info@newhorizons.com",
+            "fax": ""
+        }
+    },
+    {
+        "name": "Contractor Entity",
+        "attributes": {
+            "entity": "New Horizons Ltd.",
+            "address": "BlaustraBe 16, 80587, Munich.",
+            "taxID": "DE28 901 637 28",
+            "num": "(0) 418-874-465-0",
+            "email": "info@newhorizons.com",
+            "fax": ""
+        }
+    },
+    {
+        "project_id": "DE28 901 637 28",
+        "order_id": "20230213-A674B",
+        "date": "26.06.2021"
+    },
+    {
+        "services": [
+            "Supply of materials, labor, and installation of metallic framed,insulated double-faced drywalls",
+            "Gypsum and drywall"
+        ]
+    }
+]

@@ -2,12 +2,12 @@
 from pdf2image import convert_from_path
 def load_prompts():
     query = [
-        'What is the contracting entity/company?',
-        'What is the address of the contracting entity/company?',
-        'What is the Tax ID of the contracting entity/company?',
-        'What is the Tel of the contracting entity/company?',
-        'What is the Email of the contracting entity/company?',
-        'What is the Fax of the contracting entity/company?',
+        'What is the name of the contracting company?',
+        'What is the address of the contracting company?',
+        'What is the Tax ID of the contracting company?',
+        'What is the Tel of the contracting company?',
+        'What is the Email of the contracting company?',
+        'What is the Fax of the contracting company?',
 
         'What is the name of the contractor?',
         'What is the address of the contractor?',
