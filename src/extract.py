@@ -1,16 +1,25 @@
 import os
+import re
 
 from paddlenlp import Taskflow
 from typing import List
 from components import Entity, process_result
+from utils import read_text
 
 class DocumentExtractor:
     def __init__(
             self,
             query: List[str],
+            schema: List[dict]
     ):
-        self.doc_prompt = Taskflow("document_intelligence")
+        self.image_promt = Taskflow("document_intelligence")
         self.query = query
+
+
+        self.schema = schema
+        self.text_promt = Taskflow("information_extraction", schema=self.schema, model='uie-base-en')
+
+        
 
         self.contracting_entity = {}
         self.contractor_entity = {}
@@ -18,11 +27,14 @@ class DocumentExtractor:
         self.project = {}
         self.services = {}
 
+        self.declaration = {}
+        self.contact_person = {}
+
     def extract(self, image_path: str):
         if not os.path.exists(image_path):
             raise FileNotFoundError(f"File {image_path} not found")
 
-        outputs = self.doc_prompt({"doc": image_path, "prompt": self.query})
+        outputs = self.image_promt({"doc": image_path, "prompt": self.query})
 
         self.attributes['entity'] = process_result(outputs[0]['result'][0])
         self.attributes['address'] = process_result(outputs[1]['result'][0])
@@ -49,14 +61,16 @@ class DocumentExtractor:
         self.project['project_id'] = process_result(outputs[13]['result'][0])
         self.project['order_id'] = process_result(outputs[14]['result'][0])
         self.project['date'] = process_result(outputs[15]['result'][0])
+        self.project['address'] = process_result(outputs[16]['result'][0])
+        
 
         # check in self.project if there are any empty values
         self.project = {k: v for k, v in self.project.items() if v != ''}
 
-        self.services['service'] = process_result(outputs[16]['result'][0])
-        self.services['specific_services'] = process_result(outputs[17]['result'][0])
-        self.services['provided_services'] = process_result(outputs[18]['result'][0])
-        self.services['contracted_works'] = process_result(outputs[19]['result'][0])
+        self.services['service'] = process_result(outputs[17]['result'][0])
+        self.services['specific_services'] = process_result(outputs[19]['result'][0])
+        self.services['provided_services'] = process_result(outputs[19]['result'][0])
+        self.services['contracted_works'] = process_result(outputs[20]['result'][0])
 
         # return a set of all values from self.services
         self.services['services'] = list(set(self.services.values()))
@@ -71,3 +85,39 @@ class DocumentExtractor:
                     self.services]
 
         return entities
+
+
+
+    def get_declaration(self, text_path):
+        if not os.path.exists(text_path):
+            raise FileNotFoundError(f"File {text_path} not found")
+
+        text = read_text(text_path)
+        
+        pth = r"declaration:([\n\w\s.,°-]+\.)"
+        declarations = re.findall(pth, text, re.IGNORECASE)
+
+        if len(declarations) > 0:
+            declaration = declarations[0]
+        
+        else:
+            declaration = ''
+
+        self.declaration['name'] = 'declaration'
+        self.declaration['entity'] = declaration.strip()
+        return self.declaration
+    
+
+
+    def get_contact_person(self, text_path):
+        if not os.path.exists(text_path):
+            raise FileNotFoundError(f"File {text_path} not found")
+
+        text = read_text(text_path)
+        person = self.text_promt(text)
+
+        self.contact_person['name'] = 'contact_person'
+        self.contact_person['entity'] = person[0]['Person'][0]['text']
+        self.contact_person['position'] = person[0]['Person'][0]['relations']['Position'][0]['text']
+        return [self.contact_person]
+    

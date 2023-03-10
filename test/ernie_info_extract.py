@@ -3,13 +3,10 @@ from paddlenlp import Taskflow
 import os
 
 
-directory = 'outputs/Declaration/Information_extraction/'
-if not os.path.exists(directory):
-    os.makedirs(directory)
 
 
 def get_declaration(path):
-    schema = [{'Declaration': ['declar', 'confirms']}]
+    schema = [{'Person': ['Company', 'Position']}]
     ie_en = Taskflow('information_extraction', schema=schema, model='uie-base-en')
 
     with open(path + 'text.txt', 'r') as f:

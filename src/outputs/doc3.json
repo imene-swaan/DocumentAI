@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Contracting Entity",
+        "attributes": {
+            "entity": "Construction Management GmbH.",
+            "address": "Gartenstra\u03b2e 6, 80638 Munich.",
+            "taxID": "15/689/451243.",
+            "num": "",
+            "email": "",
+            "fax": ""
+        }
+    },
+    {
+        "name": "Contractor Entity",
+        "attributes": {
+            "entity": "Force Plus Construction GmbH",
+            "address": "Sudstrasse 17, Munich, Bayern",
+            "taxID": "18/629/145321",
+            "num": "",
+            "email": "",
+            "fax": ""
+        }
+    },
+    {
+        "project_id": "009-223-637A.v2",
+        "order_id": "BC1002-3601-B",
+        "date": "25-12-22",
+        "address": "Foundations"
+    },
+    {
+        "services": [
+            "Foundation earthworks, foundation piles, footings and beam-on-grade foundations",
+            "Foundations"
+        ]
+    },
+    {
+        "name": "declaration",
+        "entity": ""
+    },
+    [
+        {
+            "name": "contact_person",
+            "entity": "Carl McCawley",
+            "position": "Chief Project Officer"
+        }
+    ]
+]

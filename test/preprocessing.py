@@ -1,11 +1,20 @@
 import pandas as pd
 import re
 
-def remove_table(path):
+
+
+def read_text(path):
     with open(path + 'text.txt', 'r') as f:
         text = f.read()
+    return text
+
+def read_table(path):
+    df = pd.read_csv(path + 'table_0.csv')
+    return df
 
 
+
+def remove_table(path):
     df = pd.read_csv(path + 'table_0.csv')
 
     start = df.columns[0]
@@ -15,16 +24,26 @@ def remove_table(path):
 
     final_path = start + pat*lines
 
+    text = read_text(path)
     text = re.sub(final_path, '\n\n', text)
+
+    return text
+
+
+    
+def remove_declaration(path):
+
+    text = remove_table(path)
+
+    pat = r"declaration:([\n\w\s.,°-]+\.)"
+
+    text = re.sub(pat, '\n\n', text)
 
     with open(path + 'doc.txt', 'w') as f:
         for line in text:
             f.write(line)
          
-        f.close() 
-
-
-    
+        f.close()
 
 if __name__ == '__main__':
     for i in range(1, 3):
