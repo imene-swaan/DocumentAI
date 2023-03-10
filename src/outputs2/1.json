@@ -1,0 +1,42 @@
+[
+    {
+        "contracting": {
+            "name": "construction management gmbh",
+            "attributes": {
+                "address": "Gartenstrasse 6, 80638 Munich",
+                "taxID": "20/999/512315",
+                "Tel": "0444-666 888-",
+                "email": "@clearskies.com",
+                "fax": "0444-666 888-20"
+            }
+        }
+    },
+    {
+        "contractor": {
+            "name": "clear skies contractors ltd",
+            "attributes": {
+                "address": "Braunstrasse 81, Munich, Bavaria",
+                "taxID": "20/999/512315",
+                "Tel": "0444-666 888-",
+                "email": "contact@clearskies.com",
+                "fax": "0444-666 888-20"
+            }
+        }
+    },
+    {
+        "Project ID": "19A0015672B",
+        "Project Name": "CAU Faculty Building N°3",
+        "Project Address": "Tizianstrasse 7, 80637, Munich, Bavaria"
+    },
+    {},
+    {},
+    {
+        "name": "declaration",
+        "entity": "As a specialist contractor, we declare that the contracted services were carried out in\ntime accordance with the requirements."
+    },
+    {
+        "name": "contact_person",
+        "entity": "Marc Uwe",
+        "position": "Managing director"
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "contracting": {
+            "name": "construction management gmbh",
+            "attributes": {
+                "address": "Gartenstraβe 6, 80638 Munich.",
+                "taxID": "15/689/451243.",
+                "Tel": "15/689/451243.",
+                "email": "15/689/451243.",
+                "fax": "15/689/451243."
+            }
+        }
+    },
+    {
+        "contractor": {
+            "name": "force plus construction ltd",
+            "attributes": {
+                "address": "SudstraBe 17, Munich, Bayern",
+                "taxID": "21 623 314372",
+                "Tel": "",
+                "email": "",
+                "fax": "18/629/145321"
+            }
+        }
+    },
+    {
+        "Project ID": " 009-223-637A.v2.",
+        "Project": " Office Building state of Bayern, 23 Agnes-Pockels, Munich Bavaria"
+    },
+    {
+        "Order ID": " BC1002-3601-B"
+    },
+    {
+        "Start date": " 06-02-22",
+        "End date": " 25-12-22"
+    },
+    {
+        "name": "declaration",
+        "entity": ""
+    },
+    {
+        "name": "contact_person",
+        "entity": "Carl McCawley",
+        "position": "Chief Project Officer"
+    }
+]

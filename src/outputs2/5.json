@@ -1,0 +1,42 @@
+[
+    {
+        "contracting": {
+            "name": "construction management gmbh",
+            "attributes": {
+                "address": "GartenstraBe 6, 80638 Munich.",
+                "taxID": "15/689/451243.",
+                "Tel": "15/689/451243.",
+                "email": "sweiss@fcs.com",
+                "fax": "15/689/451243."
+            }
+        }
+    },
+    {
+        "contractor": {
+            "name": "framing contracting specialists ltd",
+            "attributes": {
+                "address": "Dachauerstr. 17, 80637, Munchen, Bayern",
+                "taxID": "19/634/655453",
+                "Tel": "19/634/655453",
+                "email": "sweiss@fcs.com",
+                "fax": "19/634/655453"
+            }
+        }
+    },
+    {
+        "Construction project": " CAU / New Philological building",
+        "Project ID": " GM-31240071",
+        "Project manager": " Steffen Weissmann"
+    },
+    {},
+    {},
+    {
+        "name": "declaration",
+        "entity": "The Contractor here with expressly confirms that the work has been executed in accordance with\nthe contract and in full, as well as in accordance with the recognized the recognized rules of\ntechnology and in compliance with the provisions of the contracting entity and that he has checked\nall services of his order for proper functioning. functional capability."
+    },
+    {
+        "name": "contact_person",
+        "entity": "Steffen Weissmann",
+        "position": "Managing director\nFrami"
+    }
+]

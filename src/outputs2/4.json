@@ -1,0 +1,44 @@
+[
+    {
+        "contracting": {
+            "name": "bmab",
+            "attributes": {
+                "address": "BuildingManagement Agency of the State of Bavaria",
+                "taxID": "",
+                "Tel": "0645-768 8545-",
+                "email": "jsurtees@jsconcrete.com",
+                "fax": ""
+            }
+        }
+    },
+    {
+        "contractor": {
+            "name": "john surtees concrete specialists ltd",
+            "attributes": {
+                "address": "GartenstraβBe 6, 80638 Munich.",
+                "taxID": "21/602/316672",
+                "Tel": "0645-768 8545-",
+                "email": "jsurtees@jsconcrete.com",
+                "fax": "21/602/316672"
+            }
+        }
+    },
+    {
+        "Project": " Northhall Bank, 13 Agnes-Pockels, Munich Bavaria"
+    },
+    {
+        "Order ID": " C001-3401-B"
+    },
+    {
+        "Date of work": " 08.06.22 – 14.02.23"
+    },
+    {
+        "name": "declaration",
+        "entity": "The following document provides de declaration of services by John Surtees Concrete\nSpecialists Ltd., in accordance with the rules of construction contracting and specialist\nwork subcontracting, recognized by the state of Bavaria, under the Building\nManagement Agency of the State of Bavaria, BMAB."
+    },
+    {
+        "name": "contact_person",
+        "entity": "John Surtees",
+        "position": "CEO"
+    }
+]

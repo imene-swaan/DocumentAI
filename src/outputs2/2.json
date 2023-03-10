@@ -1,0 +1,44 @@
+[
+    {
+        "contracting": {
+            "name": "construction management gmbh",
+            "attributes": {
+                "address": "GartenstraβBe 6, 80638 Munich.",
+                "taxID": "DE28 901 637 28",
+                "Tel": "(0) 418-874-465-0",
+                "email": "info@newhorizons.com",
+                "fax": "(0) 418-874-465-"
+            }
+        }
+    },
+    {
+        "contractor": {
+            "name": "new horizons ltd",
+            "attributes": {
+                "address": "Lichtstrasse 81, Munich, Bayern",
+                "taxID": "DE28 901 637 28",
+                "Tel": "(0) 418-874-465-0",
+                "email": "info@newhorizons.com",
+                "fax": "(0) 418-874-465-0"
+            }
+        }
+    },
+    {
+        "Project": "Office Building N°6"
+    },
+    {
+        "Order dates": "28.01.2019 – 26.06.2021"
+    },
+    {
+        "Order dates": "28.01.2019 – 26.06.2021"
+    },
+    {
+        "name": "declaration",
+        "entity": "Hereby the specialist contractor New Horizons Ltd., declares that the below-stated\nservices were carried out in accordance with the technical and schedule\nrequirements of Order N° 20230213-A674B."
+    },
+    {
+        "name": "contact_person",
+        "entity": "Hans Schumacher",
+        "position": "Project leader"
+    }
+]
