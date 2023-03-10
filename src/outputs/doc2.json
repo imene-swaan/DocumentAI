@@ -1,48 +1,12 @@
-[
-    {
-        "name": "Contracting Entity",
+{
+    "contracting": {
+        "name": "construction management gmbh",
         "attributes": {
-            "entity": "Construction Management GmbH.",
-            "address": "BlaustraBe 16, 80587, Munich.",
+            "address": "Gartenstra\u03b2Be 6, 80638 Munich.",
             "taxID": "DE28 901 637 28",
-            "num": "",
+            "Tel": "(0) 418-874-465-0",
             "email": "info@newhorizons.com",
-            "fax": ""
+            "fax": "(0) 418-874-465-"
         }
-    },
-    {
-        "name": "Contractor Entity",
-        "attributes": {
-            "entity": "New Horizons Ltd.",
-            "address": "Lichtstrasse 81, Munich, Bayern",
-            "taxID": "DE28 901 637 28",
-            "num": "",
-            "email": "info@newhorizons.com",
-            "fax": ""
-        }
-    },
-    {
-        "project": "Supply of materials, labor, and installation of metallic framed,insulated double-faced drywalls",
-        "project_id": "DE28 901 637 28",
-        "order_id": "20230213-A674B",
-        "date": "28.01.2019 - 26.06.2021",
-        "address": "BlaustraBe 16, 80587, Munich."
-    },
-    {
-        "services": [
-            "Gypsum and drywall",
-            "Supply of materials, labor, and installation of metallic framed,insulated double-faced drywalls"
-        ]
-    },
-    {
-        "name": "declaration",
-        "entity": "Hereby the specialist contractor New Horizons Ltd., declares that the below-stated\nservices were carried out in accordance with the technical and schedule\nrequirements of Order N\u00b0 20230213-A674B."
-    },
-    [
-        {
-            "name": "contact_person",
-            "entity": "Hans Schumacher",
-            "position": "Project leader"
-        }
-    ]
-]
+    }
+}

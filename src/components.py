@@ -4,7 +4,6 @@ from pydantic import BaseModel, validator
 import re
 
 class Entity(BaseModel):
-    entity: str
     address: str
     taxID: str
     num: str
