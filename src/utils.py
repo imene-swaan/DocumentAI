@@ -29,6 +29,14 @@ def load_prompts_project():
     ]
     return query
 
+def load_prompts_date():
+    query = [
+        'What are the dates?',
+        'What is the installation date?',
+        'What is the project date?',
+    ]
+    return query
+
 def load_contact_person_schema():
     schema = [{'Person': ['Company', 'Position']}]
 

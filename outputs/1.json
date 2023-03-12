@@ -39,7 +39,10 @@
     },
     {
         "name": "Dates",
-        "attributes": {}
+        "attributes": [
+            "",
+            "October 2020 to June 2022"
+        ]
     },
     {
         "name": "services",

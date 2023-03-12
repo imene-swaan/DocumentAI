@@ -84,11 +84,20 @@ class DocumentExtractor:
         return [self.order]
     
     def get_dates(self):
-        self.date = {'name': 'Dates', 'attributes': {}}
+        self.date = {'name': 'Dates', 'attributes': []}
         table = get_tables(self.pdf_path)
         for key in table.keys():
             if ('date' in str.lower(key)):
-                self.date['attributes'][key] = table[key]
+                self.date['attributes'].append([key, table[key]])
+        
+        if len(self.date['attributes']) == 0:
+            self.query_serives = load_prompts_date()
+            outputs = self.image_promt({"doc": self.image_path, "prompt": self.query_serives})
+
+            for i in range(len(self.query_serives)):
+                self.date['attributes'].append(process_result(outputs[i]['result'][0]))
+            
+            self.date['attributes'] = list(set(self.date['attributes']))
 
         return [self.date]
 

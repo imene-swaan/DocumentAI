@@ -38,9 +38,12 @@
     },
     {
         "name": "Dates",
-        "attributes": {
-            "Order dates": "28.01.2019 – 26.06.2021"
-        }
+        "attributes": [
+            [
+                "Order dates",
+                "28.01.2019 – 26.06.2021"
+            ]
+        ]
     },
     {
         "name": "services",

@@ -1,13 +1,13 @@
 [
     {
         "contracting": {
-            "name": "bmab",
+            "name": "construction management gmbh",
             "attributes": {
-                "address": "BuildingManagement Agency of the State of Bavaria",
-                "taxID": "",
+                "address": "GartenstraβBe 6, 80638 Munich.",
+                "taxID": "15/689/451243.",
                 "Tel": "0645-768 8545-",
                 "email": "jsurtees@jsconcrete.com",
-                "fax": ""
+                "fax": "15/689/451243."
             }
         }
     },
@@ -24,13 +24,33 @@
         }
     },
     {
-        "Project": " Northhall Bank, 13 Agnes-Pockels, Munich Bavaria"
+        "name": "Project",
+        "attributes": {
+            "Project": " Northhall Bank, 13 Agnes-Pockels, Munich Bavaria"
+        }
     },
     {
-        "Order ID": " C001-3401-B"
+        "name": "Order",
+        "attributes": {
+            "Order ID": " C001-3401-B"
+        }
     },
     {
-        "Date of work": " 08.06.22 – 14.02.23"
+        "name": "Dates",
+        "attributes": [
+            [
+                "Date of work",
+                " 08.06.22 – 14.02.23"
+            ]
+        ]
+    },
+    {
+        "name": "services",
+        "services": [
+            " 08.06.22 – 14.02.23",
+            " Concrete works",
+            " Supply of materials, equipment and labor for concrete framing of"
+        ]
     },
     {
         "name": "declaration",

@@ -38,10 +38,16 @@
     },
     {
         "name": "Dates",
-        "attributes": {
-            "Start date": " 06-02-22",
-            "End date": " 25-12-22"
-        }
+        "attributes": [
+            [
+                "Start date",
+                " 06-02-22"
+            ],
+            [
+                "End date",
+                " 25-12-22"
+            ]
+        ]
     },
     {
         "name": "services",
