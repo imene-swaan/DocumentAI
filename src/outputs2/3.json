@@ -24,15 +24,31 @@
         }
     },
     {
-        "Project ID": " 009-223-637A.v2.",
-        "Project": " Office Building state of Bayern, 23 Agnes-Pockels, Munich Bavaria"
+        "name": "Project",
+        "attributes": {
+            "Project ID": " 009-223-637A.v2.",
+            "Project": " Office Building state of Bayern, 23 Agnes-Pockels, Munich Bavaria"
+        }
     },
     {
-        "Order ID": " BC1002-3601-B"
+        "name": "Order",
+        "attributes": {
+            "Order ID": " BC1002-3601-B"
+        }
     },
     {
-        "Start date": " 06-02-22",
-        "End date": " 25-12-22"
+        "name": "Dates",
+        "attributes": {
+            "Start date": " 06-02-22",
+            "End date": " 25-12-22"
+        }
+    },
+    {
+        "name": "services",
+        "services": [
+            " Foundations",
+            " Foundation earthworks, foundation piles, footings and beam-on-"
+        ]
     },
     {
         "name": "declaration",

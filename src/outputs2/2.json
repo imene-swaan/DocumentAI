@@ -24,13 +24,29 @@
         }
     },
     {
-        "Project": "Office Building N°6"
+        "name": "Project",
+        "attributes": {
+            "Project": "Office Building N°6"
+        }
     },
     {
-        "Order dates": "28.01.2019 – 26.06.2021"
+        "name": "Order",
+        "attributes": {
+            "Order dates": "28.01.2019 – 26.06.2021",
+            "Order ID": "20230213-A674B"
+        }
     },
     {
-        "Order dates": "28.01.2019 – 26.06.2021"
+        "name": "Dates",
+        "attributes": {
+            "Order dates": "28.01.2019 – 26.06.2021"
+        }
+    },
+    {
+        "name": "services",
+        "services": [
+            "Supply of materials, labor, and installation of metallic framed,\rinsulated double-faced drywalls"
+        ]
     },
     {
         "name": "declaration",

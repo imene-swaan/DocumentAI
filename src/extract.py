@@ -47,32 +47,48 @@ class DocumentExtractor:
         self.entities[type]['attributes']['fax'] = process_result(outputs[4]['result'][0])
         return [self.entities]
 
+    def get_services(self):
+        self.services = {'name': 'services', 'services': []}
+        table = get_tables(self.pdf_path)
+        for key in table.keys():
+            if ('service' in str.lower(key)) | ('work' in str.lower(key)):
+                self.services['services'].append(table[key])
+        
+        if len(self.services['services']) == 0:
+            self.query_serives = load_prompts_project()
+            outputs = self.image_promt({"doc": self.image_path, "prompt": self.query_serives})
 
+            for i in range(len(self.query_serives)):
+                self.services['services'].append(process_result(outputs[i]['result'][0]))
+            
+            self.services['services'] = list(set(self.services['services']))
+
+        return [self.services]
 
     def get_project(self):
-        self.project = {}
+        self.project = {'name': 'Project', 'attributes': {}}
         table = get_tables(self.pdf_path)
         for key in table.keys():
             if ('project' in str.lower(key)):
-                self.project[key] = table[key]
+                self.project['attributes'][key] = table[key]
 
         return [self.project]
 
     def get_order(self):
-        self.order = {}
+        self.order = {'name': 'Order', 'attributes': {}}
         table = get_tables(self.pdf_path)
         for key in table.keys():
             if ('order' in str.lower(key)):
-                self.order[key] = table[key]
+                self.order['attributes'][key] = table[key]
 
         return [self.order]
     
     def get_dates(self):
-        self.date = {}
+        self.date = {'name': 'Dates', 'attributes': {}}
         table = get_tables(self.pdf_path)
         for key in table.keys():
             if ('date' in str.lower(key)):
-                self.date[key] = table[key]
+                self.date['attributes'][key] = table[key]
 
         return [self.date]
 

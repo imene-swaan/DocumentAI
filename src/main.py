@@ -14,6 +14,8 @@ if __name__ == '__main__':
         data += doc.get_order()
         data += doc.get_dates()
 
+        data += doc.get_services()
+
         data += doc.get_declaration()
         data += doc.get_contact_person()
 

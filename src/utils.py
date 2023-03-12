@@ -20,14 +20,8 @@ def load_prompts_entity(entity):
     ]
     return query
 
-def load_prompts_project(project):
+def load_prompts_project():
     query = [
-        f'What is the project?',
-        'What is the id/no of the project?',
-        'What is the id/no of the order?',
-        'What are all the dates of the project?',
-        'What is the address of the service/work/project?',
-
         'What is the service?',
         'What are the specific services?',
         'What are the provided services?',
@@ -69,7 +63,8 @@ def convert_pdf_table_to_csv(path):
     
     else:
         table = table[0]
-        tab = {table.iloc[i, :][0]: table.iloc[i, :][1] for i in range(table.shape[0])}
+        tab = {table.iloc[i, 0]: table.iloc[i, 1] for i in range(table.shape[0])}
+        tab[table.columns[0]] = table.columns[1]
         return tab
 
 
@@ -186,5 +181,5 @@ def get_ner_orgs(text):
 
 if __name__ == '__main__':
     for i in range(1, 6):
-        table = get_tables(f'../data/Document {str(i)}.pdf')
+        table = convert_pdf_table_to_csv(f'../data/Document {str(i)}.pdf')
         print(table)
